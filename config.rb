@@ -17,11 +17,11 @@ firesass = false
 
 
 # Location of the theme's resources.
-css_dir         = "build/zen-collections/css"
-sass_dir        = "zen-collections/sass"
-extensions_dir  = "zen-collections/sass-extensions"
-images_dir      = "zen-collections/images"
-javascripts_dir = "zen-collections/js"
+css_dir         = "build/zen_collections/css"
+sass_dir        = "zen_collections/sass"
+extensions_dir  = "zen_collections/sass-extensions"
+images_dir      = "zen_collections/images"
+javascripts_dir = "zen_collections/js"
 
 
 # Require any additional compass plugins installed on your system.
