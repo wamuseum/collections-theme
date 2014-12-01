@@ -29,14 +29,15 @@ module.exports = function(grunt) {
 
 
 // CSS files
-        sass: {
+        compass: {
             dist: {
                 options: {
-                    style: 'expanded'
+                    config: 'zen-collections/config.rb'
+                    //style: 'expanded'
                 },
                 files: [{
                     expand: true,
-                    cwd: 'zen-collections/scss',
+                    cwd: 'zen-collections/sass',
                     src: ['*.scss'],
                     dest: 'build/zen-collections/css/sassy',
                     ext: '.css'
@@ -141,6 +142,11 @@ module.exports = function(grunt) {
                     dest: 'build/zen-collections/templates'
                 },{
                     expand: true,
+                    cwd: 'zen/',
+                    src: ['**'],
+                    dest: 'build/zen'
+                },{
+                    expand: true,
                     src: 'zen-collections/zen-collections.info',
                     dest: 'build/zen-collections',
                     flatten: true
@@ -226,7 +232,7 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: ['zen-collections/sass/*.scss', 'style/scss/**/*.scss'],
-                tasks: ['clean:css', 'sass', 'autoprefixer', 'copy:css', 'clean:prepro'],
+                tasks: ['clean:css', 'compass', 'autoprefixer', 'copy:css', 'clean:prepro'],
                 options: {
                     spawn: false,
                 }
@@ -264,7 +270,7 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['clean', 'concat', 'uglify', 'jshint', 'sass', 'autoprefixer', 'copy', 'clean:prepro']);
+    grunt.registerTask('default', ['clean', 'concat', 'uglify', 'jshint', 'compass', 'autoprefixer', 'copy', 'clean:prepro']);
     grunt.registerTask('dev', ['watch']);
     grunt.registerTask('deploy', ['sftp-deploy:build']);
     grunt.registerTask('deploy-live', ['sftp-deploy:live']);

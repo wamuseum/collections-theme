@@ -1,1 +1,5 @@
 node_modules/*
+build/*
+.ftppass
+
+sftpCache.json
