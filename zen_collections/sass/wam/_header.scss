@@ -1,0 +1,22 @@
+/* header masthead */
+.header {
+  background: $corporate;
+
+  > nav {
+    border-bottom: 3px solid $grey;
+    border-bottom-color: rgba($grey, 0.2);
+    background: $corporate;
+    background: rgba($corporate, 0.9);
+
+    @include clearfix-micro();
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+

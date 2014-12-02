@@ -1,0 +1,105 @@
+
+.commons-bw-partial-node-form {
+  margin-bottom: 1.7em;
+  padding: 0 1em;
+  position: relative;
+}
+
+.expandable-form {
+	transition: all 0.5s ease;	
+
+
+	.field-name-field-media {
+		legend {
+			display: none;
+		}
+	}
+	.fieldset-outer-wrapper {
+		margin: 0;
+		padding: 0;
+	}
+	.form-type-media {
+		margin-top: 0.3em;
+	}
+}
+
+.expanded-form {
+	background: white;
+	border-radius: 3px;
+	padding: 1em 3em 1em 1em;
+	margin: 0 1em;
+	box-shadow: 0 1px 2px 1px rgba(150,150,150,.1);
+}
+
+
+
+.commons-bw-partial-node-form.compact-form .form-item {
+  margin: 0;
+}
+.commons-bw-partial-node-form.compact-form textarea {
+  resize: none;
+}
+
+.trigger-field,
+.trigger-field .form-item {
+  margin-top: 0;
+}
+.compact-form .trigger-field input, .compact-form
+.trigger-field textarea {
+  height: 2.2em;
+  overflow: hidden;
+}
+
+.expandable-form-toggle {
+  float: right;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+	overflow: hidden;
+	color: $grey;
+
+}
+.expandable-form-toggle, .expandable-form-toggle:before {
+  width: 1.4em;
+  height: 1.4em;
+  text-align: center;
+  line-height: 1.3;
+  
+}
+.expanded-form .expandable-form-toggle {
+  display: block;
+  background: white;
+  border-radius: 3px;
+
+  &:hover {
+  	background: $grey-light;
+  	color: $black;
+  }
+}
+.expanded-form .expandable-form-toggle:before {
+  content: 'x';
+  display: block;
+}
+.expandable-form-toggle:hover {
+  text-decoration: none;
+}
+
+.compact-form .full-form {
+  float: right;
+  margin-top: .5em;
+}
+.compact-form .full-form:after {
+  content: '\2192';
+  display: inline-block;
+  margin-left: .2em;
+}
+
+.commons-bw-partial-node-form-document {
+  .full-form,
+  .user-picture {
+    display: none;
+  }    
+}
+.view-filter {
+  padding: 1em;
+}

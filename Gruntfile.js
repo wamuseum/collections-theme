@@ -66,28 +66,14 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         reporter: require('jshint-stylish'),
-        ignores: ['style/js/respond.src.js',
-                    'style/js/jquery-extra-selectors.js',
-                    'style/js/jquery.panorama.js',
-                    'style/js/jquery.cookie.js',
-                    'style/js/jquery.scrollTo.js',
-                    'style/js/jquery.masonry.js',
-                    'style/libs/js/google-code-prettify/prettify.js',
-                    'style/libs/js/royalslider/jquery.easing-1.3.js',
-                    'style/libs/js/royalslider/jquery.royalslider.min.js',
-                    'style/libs/js/video-js/video.js',
-                    'style/libs/js/audiojs/audio.js',
-                    'style/js/jquery.dotdotdot.js',
-                    'style/libs/js/iscroll/iscroll.js',
-                    'style/js/jquery.masonry.min.js',
-                    'style/js/ga_social_tracking.js']
+        ignores: ['zen_collections/js/masonry.pkgd.min.js']
       },
       beforeconcat: ['style/js/*.js']
     },
 
     concat: {
       dist: {
-        src: ['zen_collections/js/script.js'],
+        src: ['zen_collections/js/masonry.pkgd.min.js', 'zen_collections/js/imagesloaded.pkgd.min.js', 'zen_collections/js/wam__masonry.js', 'zen_collections/js/script.js'],
         dest: 'build/zen_collections/js/script.js'
       }
     },
@@ -233,28 +219,28 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: ['zen_collections/sass/*.scss', 'style/scss/**/*.scss'],
-        tasks: ['clean:css', 'compass', 'autoprefixer', 'copy:css', 'clean:prepro'],
+        tasks: ['clean:css', 'compass', 'autoprefixer', 'copy:css', 'clean:prepro', 'sftp-deploy:build'],
         options: {
           spawn: false
         }
       },
       scripts: {
         files: ['zen_collections/js/*.js'],
-        tasks: ['clean:scripts', 'jshint', 'concat', 'uglify', 'copy:scripts'],
+        tasks: ['clean:scripts', 'jshint', 'concat', 'uglify', 'copy:scripts', 'sftp-deploy:build'],
         options: {
           spawn: false
         }
       },
       images: {
         files: ['zen_collections/images/*', 'zen_collections/images/**/*'],
-        tasks: ['clean:images', 'copy:images'],
+        tasks: ['clean:images', 'copy:images', 'sftp-deploy:build'],
         options: {
           spawn: false
         }
       },
       zen: {
         files: ['zen_collections/templates/*.php', 'zen_collections/templates/**/*.php', 'zen_collections/views-templates/*.php', 'zen_collections/views-templates/**/*.php', 'zen_collections/zen_collections.info', 'zen_collections/template.php', 'zen_collections/theme-settings.php'],
-        tasks: ['clean:zen', 'copy:zen'],
+        tasks: ['clean:zen', 'copy:zen', 'sftp-deploy:build'],
         options: {
           spawn: false
         }
@@ -271,7 +257,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-  grunt.registerTask('default', ['clean', 'concat', 'uglify', 'jshint', 'compass', 'autoprefixer', 'copy', 'clean:prepro']);
+  grunt.registerTask('default', ['clean', 'concat', 'uglify', 'jshint', 'compass', 'autoprefixer', 'copy', 'clean:prepro', 'sftp-deploy:build']);
   grunt.registerTask('dev', ['watch']);
   grunt.registerTask('deploy', ['sftp-deploy:build']);
   grunt.registerTask('deploy-live', ['sftp-deploy:live']);

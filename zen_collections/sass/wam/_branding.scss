@@ -1,0 +1,77 @@
+/* =============================================================================
+ *   Branding
+ * ========================================================================== */
+/**
+ * Wraps all the branding elements, logo, name and slogan
+ */
+#branding {
+  float: left;
+  width: 100%;
+  padding-left: 4.1875em;
+  text-align: left;
+  margin-right: -36.5em;
+}
+.people-search-active #branding {
+  margin-right: -42em;
+}
+
+/**
+ * Logo
+ */
+#logo {
+  position: relative;
+  display: block;
+  float: left;
+  position: relative;
+  margin-bottom: -3em;
+  margin-left: -4.1875em;
+  z-index: 3;
+}
+
+/**
+ * Wrapper for the site name and slogan (hgroup)
+ */
+#name-and-slogan {
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  min-height: 4em;
+  padding-right: 36.5em;
+}
+
+.people-search-active #name-and-slogan {
+  padding-right: 42em;
+}
+
+/**
+ * Site name (h1)
+ */
+#site-name {
+  margin: .3em 0 0;
+  font-family: 'Trebuchet MS';
+  font-weight: 700;
+}
+#site-name a:link, #site-name a:visited {
+  text-decoration: none;
+}
+#site-name a:hover, #site-name a:focus {
+  text-decoration: none;
+}
+
+/**
+ * Site slogan (h2)
+ */
+#site-slogan {
+  margin: 0 0 .3em;
+  font-size: 1em;
+  color: white;
+}
+
+#site-name,
+#site-slogan {
+  display: block;
+  overflow: hidden;
+  padding-right: 10px;
+  line-height: 1.2em;
+  white-space: normal;
+}

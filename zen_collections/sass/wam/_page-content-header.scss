@@ -1,0 +1,24 @@
+/* =============================================================================
+ *   Page content header
+ * ========================================================================== */
+/**
+ * The main page title (h1)
+ */
+#page-title,
+.search-results-title {
+  margin: 0 0 .2em;
+  font-weight: 300;
+  font-size: 3.85em;
+  line-height: 1.2em;
+}
+
+.page-messages-view #page-title,
+.page-flag-confirm #page-title {
+  /* Some pages require a smaller title to prevent the equivalent of
+     "yelling". */
+  font-size: 2.5em;
+}
+
+#page-top {
+  margin: 20px 0 0;
+}

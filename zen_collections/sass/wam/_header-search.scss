@@ -1,0 +1,102 @@
+//Search
+.header-search {
+  font-size: 0.8em;
+
+  @include breakpoint(goldilocks) {
+    font-size: 0.9em;
+  }
+}
+
+.header-search__links {
+  padding: $pad/2 $pad;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+
+  a {
+    color: white;
+    border-bottom-color: white;
+  }
+}
+
+
+
+.header-search .form-item {
+  width: 66%;
+  float: left;
+
+  label {
+    @extend .visuallyhidden;
+  }
+}
+
+.header-search__input {
+  border: 1px solid darken($corporate,5%);
+
+  //border: 1px solid rgb(105, 0, 0);
+  border-radius: 0.4em;
+  border-radius: 0.4em 0 0 0.4em;
+  height: 32px;
+  padding: 0 0.4em;
+  margin-top: 0;
+  font-size: 1.2em;
+  width: 100%;
+
+
+  &:focus {
+    box-shadow: 0 0 8px 0 lighten($corporate, 20%);
+  }
+}
+
+.header-search__button {
+  // background-color: $corporate;
+  // background-image: gradient(top, $corporate, darken($corporate,10%));
+
+  @include wam-gradient($corporate, darken($corporate,10%));
+  border: 1px solid darken($corporate,5%);
+
+  text-shadow: none;
+  line-height: 1em;
+  font-size: 0.9em;
+  box-shadow: none;
+  height: 32px;
+  padding: 0 0;
+  width: 33%;
+  border-radius: 0 0.4em 0.4em 0;
+  float: left;
+  //border: 1px solid rgb(105, 0, 0);
+  margin: 0 0 0 -1px;
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    @include wam-gradient(darken($corporate,10%), darken($corporate,20%));
+  }
+}
+
+.header-search__tab {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: $pad;
+    background: $black;
+    float: right;
+  }
+}
+
+@mixin header-search($page, $color) {
+  .#{$page} {
+    .header-search__input {
+      border: 1px solid darken($color,5%);
+    }
+    .header-search__button {
+      @include wam-gradient($color, darken($color,10%));
+      border: 1px solid darken($color,5%);
+    }
+  }
+}
+

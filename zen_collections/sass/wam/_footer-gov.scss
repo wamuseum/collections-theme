@@ -1,0 +1,40 @@
+.footer-gov {
+  //display: inline-block;
+  border-bottom: 0;
+  list-style: none;
+  line-height: 1.8em;
+
+  a {
+    color: white;
+    padding: 0.6em 0;
+    display: block;
+    border-bottom: 1px solid rgb(80,80,80);
+
+    @include breakpoint(baby-bear) {
+      padding: $pad/5 $pad;
+      display: inline-block;
+
+      border-bottom: 0;
+      border-right: 1px solid white;
+
+      &:last-of-type {
+        border-right: 0;
+      }
+    }
+  }
+
+  span {
+    clear: both;
+    display: block;
+  }
+}
+
+.footer-gov__wa {
+  @include breakpoint(baby-bear) {
+    text-align: left;
+  }
+}
+
+.footer-gov__bd {
+
+}

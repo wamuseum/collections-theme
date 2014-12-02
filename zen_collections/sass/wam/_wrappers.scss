@@ -1,0 +1,60 @@
+/* =============================================================================
+ *   Wrappers
+ * ========================================================================== */
+/**
+ * Page wrapper, includes the .container class which sets the overall page or section width
+ * Main wrapper in page.tpl.php, the .container class sets the width of the page, do not add width to it!
+ */
+/**
+ * Wraps all header elements - branding and .region-header
+ */
+.header-wrapper {
+  overflow: hidden;
+}
+
+#header {
+  position: relative;
+  color: white;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+#header a {
+  color: white;
+}
+
+.header-color-row-one {
+  border-top: 1.5em solid black;
+  background-color: #336699;
+}
+
+.header-color-row-two {
+  position: relative;
+  background-color: #2783b9;
+  min-height: 2.5em;
+  border-top: 1px solid #3d9dd6;
+  border-bottom: 1px solid #1e658f;
+  z-index: 2;
+}
+
+/**
+ * Wraps the sidebars the content column
+ */
+#columns {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/**
+ * Generic pod wrappers
+ */
+.commons-pod {
+  /* Prevent pod nesting. */
+}
+.commons-pod .commons-pod {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}

@@ -1,0 +1,29 @@
+//_sidenav.scss
+
+
+.sidenav {
+	position: relative;
+}
+
+.sidenav__nav {
+	width: 13em;
+	position: absolute;
+	top: 0;
+	left: -10em;
+	bottom: 0;
+	background: #3c3c3c url(../images/grippper.png) 100% 0 no-repeat;
+	padding-right: 3em;
+	z-index: 99;	
+	display: block;
+	transition: all 0.3s ease-out;
+
+}
+
+.sidenav__nav--active {
+	left: 0;
+}
+
+
+.sidenav__inset {
+	padding-left: 3em;
+}

@@ -1,0 +1,43 @@
+.footer-links {
+  list-style: none;
+  text-align: left;
+
+  .newsletter {
+    background: transparent url(../images/GELicons-v1.0/email.gif) 0 50% no-repeat;
+    padding-left: 22px;
+  }
+  .donation {
+    background: transparent url(../images/GELicons-v1.0/money_add.gif) 0 50% no-repeat;
+    padding-left: 22px;
+  }
+  .facebook {
+    background: transparent url(../images/GELicons-v1.0/gelicons-facebook16.gif) 0 50% no-repeat;
+    padding-left: 22px;
+  }
+  .twitter {
+    background: transparent url(../images/GELicons-v1.0/gelicons-twitter16.gif) 0 50% no-repeat;
+    padding-left: 22px;
+  }
+}
+
+.footer-links__col {
+  a {
+    color: rgb(60,60,60);
+    border-bottom: solid 1px rgb(200,200,200);
+    display: block;
+    padding: $pad/2 0;
+  }
+}
+
+.footer-links__col__list {
+  color: $black;
+  list-style: none;
+  clear: both;
+  line-height: 1.8em;
+  margin: 0;
+  padding: 0;
+
+  a {
+    border-bottom: dashed 1px rgb(220,220,220);
+  }
+}

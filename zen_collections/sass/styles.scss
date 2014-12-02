@@ -1,25 +1,73 @@
-/**
- * @file
- * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
- *
- * When you turn on CSS aggregation at admin/config/development/performance, all
- * of these @include files will be combined into a single file.
- */
+/*-----------------------------------------------------------------------------
+Museum Site Style Sheet
+version: 2.0
+author: Danny Murphy - Western Australian Museum
+email: onlineservices@museum.wa.gov.au
+website: http://www.museum.wa.gov.au
+-----------------------------------------------------------------------------*/
 
-/* Import Sass mixins, variables, Compass modules, etc. */
-@import "init";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Oswald);
 
-/* HTML element (SMACSS base) rules */
-@import "normalize";
 
-/* Layout rules */
-@import "layouts/responsive";
+@import "wam/vars";
+@import "wam/mixin";
 
-/* Component (SMACSS module) rules */
-@import "components/misc";
-// Optionally, add your own components here.
-@import "print";
+/* imports
+--------------------------- */
 
-/* SMACSS theme rules */
-/* @import "theme-A"; */
-/* @import "theme-B"; */
+@import "wam/global";
+
+
+@import "wam/html";
+@import "wam/forms";
+@import "wam/buttons";
+@import "wam/quicktabs";
+@import "wam/partial-form";
+
+
+@import "wam/glyphicon";
+
+
+@import "wam/base-grid";
+
+@import "wam/header";
+@import "wam/header-logos";
+@import "wam/header-search";
+@import "wam/header-megamenu";
+
+@import "wam/footer";
+@import "wam/footer-gov";
+@import "wam/footer-links";
+
+@import "wam/sidenav";
+@import "wam/login";
+
+@import "wam/main";
+
+
+
+///**
+// * @file
+// * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+// *
+// * When you turn on CSS aggregation at admin/config/development/performance, all
+// * of these @include files will be combined into a single file.
+// */
+//
+///* Import Sass mixins, variables, Compass modules, etc. */
+//@import "init";
+//
+///* HTML element (SMACSS base) rules */
+//@import "normalize";
+//
+///* Layout rules */
+//@import "layouts/responsive";
+//
+///* Component (SMACSS module) rules */
+//@import "components/misc";
+//// Optionally, add your own components here.
+//@import "print";
+//
+///* SMACSS theme rules */
+///* @import "theme-A"; */
+///* @import "theme-B"; */

@@ -7,6 +7,10 @@
  * @see https://drupal.org/node/1728096
  */
 
+//function zen_collections_preprocess_node(&$variables, $hook) {
+//  $variables['wam_search'] = theme('blocks', 'wam_search');
+//  $variables['wam_navbar'] = theme('blocks', 'navbar');
+//}
 
 /**
  * Override or insert variables into the maintenance page template.

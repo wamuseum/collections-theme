@@ -3,3 +3,4 @@ build/*
 .ftppass
 
 sftpCache.json
+.DS_Store

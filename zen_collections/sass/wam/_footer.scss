@@ -1,0 +1,22 @@
+.footer {
+  clear: both;
+  color: white;
+  background: $black;
+  text-align: center;
+  border-bottom: 10px solid $corporate;
+  padding-bottom: $pad*4;
+}
+
+.footer__top {
+  clear: both;
+  padding-top: $pad*2;
+  padding-bottom: $pad*2;
+  background: rgb(240,240,240);
+}
+
+.footer__main {
+  padding-top: $pad*2;
+}
+
+
+

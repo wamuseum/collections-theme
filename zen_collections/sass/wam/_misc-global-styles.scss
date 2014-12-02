@@ -1,0 +1,60 @@
+/* =============================================================================
+ *   Misc Global Styles
+ * ========================================================================== */
+/**
+ * Generic styles for nodes.
+ */
+.node-actions {
+  float: right;
+  width: 10em;
+  list-style: none;
+  margin: .5em -10em 0 0;
+  padding-left: 1em;
+  text-align: center;
+}
+.node-actions [class*="action-item"], .node-actions [class*="action-item"][type="submit"] {
+  margin: 0;
+}
+
+.node-teaser.node-promoted {
+  background-image: url('../images/node-promoted-star.png?1400601840');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+  border: none;
+  padding: 10px;
+  position: relative;
+  border-radius: 3px;
+}
+.node-teaser.node-promoted.user-picture-available {
+  padding-left: 78px;
+}
+.node-teaser.node-promoted.user-picture-available .user-picture {
+ 
+}
+.node-teaser.node-promoted.user-picture-available .user-picture img {
+  width: 50px;
+}
+
+.user-picture,
+.views-field-picture,
+.profile-badge-picture {
+  background: white;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 3px;
+  line-height: 0;
+}
+.node .user-picture:after, .comment .user-picture:after, .privatemsg-message .user-picture:after, .node
+.views-field-picture:after, .comment
+.views-field-picture:after, .privatemsg-message
+.views-field-picture:after, .node
+.profile-badge-picture:after, .comment
+.profile-badge-picture:after, .privatemsg-message
+.profile-badge-picture:after {
+  background: transparent;
+}
+
+.partial-node-form-title {
+  display: hidden;
+}

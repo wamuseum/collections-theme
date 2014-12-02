@@ -1,0 +1,43 @@
+/* =============================================================================
+ *   HTML Elements
+ * ========================================================================== */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  background: #f0f0f0 url(../images/escheresque.png) 0 0 repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  
+}
+html .cke_editable {
+  padding: 1em;
+  background: white;
+  min-height: 200px;
+}
+
+body {
+  font-family: inherit;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace, sans-serif;
+}
