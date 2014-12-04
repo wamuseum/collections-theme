@@ -4,7 +4,7 @@
 	Drupal.behaviors.wamMasonry = {
 		attach: function () {
 
-			var $container = $('.masonry .view-content');
+			var $container = $('.masonry');
 
             // Make masonry compatible with view ajax loading...
             if ($container.data('masonry')) {
