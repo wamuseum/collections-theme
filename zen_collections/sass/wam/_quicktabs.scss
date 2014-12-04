@@ -48,7 +48,7 @@ ul.secondary li a:hover, ul.secondary li a.active {
 
 
 ul.primary.tabs {
-  background: $black;
+  //background: $black;
   margin: 0;
   border-bottom: 0;
   overflow: hidden;
@@ -70,7 +70,7 @@ ul.primary.tabs li {
 }
 .quicktabs-style-commons-pills ul.quicktabs-tabs li a,
 ul.primary.tabs li a {
-  background-color: rgba(153, 153, 153, 0.3);
+  background-color: $grey-light;
   border-radius: 3px;
   
   display: inline-block;
