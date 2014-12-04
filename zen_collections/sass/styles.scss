@@ -19,13 +19,6 @@ website: http://www.museum.wa.gov.au
 
 
 @import "wam/html";
-@import "wam/forms";
-@import "wam/buttons";
-@import "wam/quicktabs";
-@import "wam/partial-form";
-
-
-@import "wam/glyphicon";
 
 
 @import "wam/base-grid";
@@ -35,6 +28,11 @@ website: http://www.museum.wa.gov.au
 @import "wam/header-search";
 @import "wam/header-megamenu";
 
+@import "wam/main";
+//@import "wam/wamnode";
+@import "wam/teasernode";
+@import "wam/fullnode";
+
 @import "wam/footer";
 @import "wam/footer-gov";
 @import "wam/footer-links";
@@ -42,8 +40,12 @@ website: http://www.museum.wa.gov.au
 @import "wam/sidenav";
 @import "wam/login";
 
-@import "wam/main";
+@import "wam/forms";
+@import "wam/buttons";
+@import "wam/quicktabs";
+@import "wam/partial-form";
 
+@import "wam/glyphicon";
 
 
 ///**

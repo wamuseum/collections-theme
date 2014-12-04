@@ -73,7 +73,12 @@ module.exports = function (grunt) {
 
     concat: {
       dist: {
-        src: ['zen_collections/js/masonry.pkgd.min.js', 'zen_collections/js/imagesloaded.pkgd.min.js', 'zen_collections/js/wam__masonry.js', 'zen_collections/js/script.js'],
+        src: ['zen_collections/js/masonry.pkgd.min.js',
+              'zen_collections/js/imagesloaded.pkgd.min.js',
+              'zen_collections/js/wam__masonry.js',
+              'zen_collections/js/wam__header-megamenu.js',
+              'zen_collections/js/wam__header-sticky.js',
+              'zen_collections/js/script.js'],
         dest: 'build/zen_collections/js/script.js'
       }
     },

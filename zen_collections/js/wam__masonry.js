@@ -14,12 +14,12 @@
 			// initialize
 			$container.masonry({
 				//columnWidth: 200,
-				itemSelector: '.masonry--item'
+				itemSelector: '.masonry__item'
 			});
 
 			$container.imagesLoaded( function() {
 		      $container.masonry({
-				itemSelector: '.masonry--item'
+				itemSelector: '.masonry__item'
 		      });
 		    });
 
