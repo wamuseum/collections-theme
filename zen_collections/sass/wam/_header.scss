@@ -35,5 +35,12 @@
    margin: 0.5em;
    color: white;
    display: inline-block;
+   border-radius: 3px;
+
+   &:hover {
+     background: $grey;
+     text-decoration: none;
+
+   }
  }
 }
