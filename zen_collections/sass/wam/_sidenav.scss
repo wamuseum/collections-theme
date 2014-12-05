@@ -1,29 +1,77 @@
-//_sidenav.scss
+////_sidenav.scss
+//
+//
+//.sidenav {
+//	position: relative;
+//}
+//
+//.sidenav__nav {
+//	width: 13em;
+//	position: absolute;
+//	top: 0;
+//	left: -10em;
+//	bottom: 0;
+//	background: #3c3c3c url(../images/grippper.png) 100% 0 no-repeat;
+//	padding-right: 3em;
+//	z-index: 99;	
+//	display: block;
+//	transition: all 0.3s ease-out;
+//
+//}
+//
+//.sidenav__nav--active {
+//	left: 0;
+//}
+//
+//
+//.sidenav__inset {
+//	padding-left: 3em;
+//}
 
-
-.sidenav {
-	position: relative;
+.sidebar {
+  background: $grey;
+  padding: 1em;
+  color: white;
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    color: inherit;
+  }
+    
+}
+.facetapi-facetapi-links {
+  font-size: 0.9em;
+}
+.facetapi-facetapi-links {
+  li {
+    display: block;
+    padding: 0.5em;
+    border: 1px solid darken($grey, 2%);
+    background: lighten($grey, 2%);
+    margin-bottom: 2px;
+    overflow: hidden;
+  }
+}
+.facetapi-active {
+  margin: -0.5em -0.5em -0.5em 0.5em;
+  border: 1px solid darken($grey, 5%);
+  background: darken($grey, 5%);
+  padding: 0.5em 1em;
+  display: block;
+  float: right;
 }
 
-.sidenav__nav {
-	width: 13em;
-	position: absolute;
-	top: 0;
-	left: -10em;
-	bottom: 0;
-	background: #3c3c3c url(../images/grippper.png) 100% 0 no-repeat;
-	padding-right: 3em;
-	z-index: 99;	
-	display: block;
-	transition: all 0.3s ease-out;
 
-}
-
-.sidenav__nav--active {
-	left: 0;
-}
-
-
-.sidenav__inset {
-	padding-left: 3em;
+.facetapi-limit-link {
+  margin: 1em 0 0;
+  padding: 0.5em;
+  border: 1px solid darken($grey, 5%);
+  background: darken($grey, 5%);
+  display: inline-block;
+  font-size: 0.9em;
 }

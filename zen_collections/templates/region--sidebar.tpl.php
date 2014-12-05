@@ -8,7 +8,7 @@
  */
 ?>
 <?php if ($content): ?>
-  <section class="<?php print $classes; ?> nomq-0-0 bb-1-3 mb-1-4 pb-1-5">
+  <section class="<?php print $classes; ?>">
     <?php print $content; ?>
   </section>
 <?php endif; ?>
