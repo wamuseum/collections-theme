@@ -78,6 +78,7 @@ module.exports = function (grunt) {
               'zen_collections/js/wam__masonry.js',
               'zen_collections/js/wam__header-megamenu.js',
               'zen_collections/js/wam__header-sticky.js',
+              'zen_collections/js/wam__facets.js',
               'zen_collections/js/script.js'],
         dest: 'build/zen_collections/js/script.js'
       }
@@ -262,7 +263,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-  grunt.registerTask('default', ['clean', 'concat', 'uglify', 'jshint', 'compass', 'autoprefixer', 'copy', 'clean:prepro', 'sftp-deploy:build']);
+  grunt.registerTask('default', ['clean', 'concat', 'uglify', 'jshint', 'compass', 'autoprefixer', 'copy', 'clean:prepro', 'sftp-deploy:live']);
   grunt.registerTask('dev', ['watch']);
   grunt.registerTask('deploy', ['sftp-deploy:build']);
   grunt.registerTask('deploy-live', ['sftp-deploy:live']);
