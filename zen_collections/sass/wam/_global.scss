@@ -1218,32 +1218,6 @@ ul.menu ul li {
   display: inline;
 }
 
-/* =============================================================================
- *   Pagers
- * ========================================================================== */
-ul.pager {
-  clear: both;
-  margin: 0;
-  text-align: center;
-}
-
-.item-list ul.pager li {
-  margin: 0;
-}
-
-ul.pager li {
-  background-image: none;
-  display: inline;
-  list-style-type: none;
-  padding: .5em;
-}
-ul.pager li.pager-current {
-  font-weight: 700;
-}
-
-.block ul.pager li {
-  margin: 0;
-}
 
 /* =============================================================================
  *   Skip Navigation

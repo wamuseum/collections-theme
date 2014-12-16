@@ -1,7 +1,56 @@
+//// Gov and Museum Logos
+//.header-logos {
+//  i {
+//    display: block;
+//
+//  }
+//  a {
+//      display: block;
+//      border-bottom: 0;
+//  }
+//}
+//.header-logos__logo {
+//  float: left;
+//  width: 61px;
+//  height: 51px;
+//  background: url("../images/logos/gov_logo.png") 50% 50% no-repeat;
+//  background-size: contain;
+//
+//  @include breakpoint(baby-bear) {
+//    width: 108px;
+//    height: 90px;
+//  }
+//}
+//
+//.header-logos__logo--gov {
+//  @extend .header-logos__logo;
+//
+//}
+//.header-logos__logo--wam {
+//  @extend .header-logos__logo;
+//
+//  width: 121px;
+//  background-image: url("../images/logos/wam_logo.png");
+//
+//   @include breakpoint(baby-bear) {
+//    float: right;
+//    width: 190px;
+//    height: 90px;
+//  }
+//}
+
+
 // Gov and Museum Logos
-.header-logos {
-  i {
-    display: block;
+.headerlogos {
+  padding: 0.3em;
+  display: block;
+
+  @include breakpoint(baby-bear) {
+    float: left;
+  }
+
+  img {
+    margin-right: 1em;
 
   }
   a {
@@ -9,32 +58,12 @@
       border-bottom: 0;
   }
 }
-.header-logos__logo {
-  float: left;
-  width: 61px;
-  height: 51px;
-  background: url("../images/logos/gov_logo.png") 50% 50% no-repeat;
-  background-size: contain;
-
-  @include breakpoint(baby-bear) {
-    width: 108px;
-    height: 90px;
-  }
+.headerlogos__logo--gov  {
+  width: auto;
+  height: 60px;
 }
 
-.header-logos__logo--gov {
-  @extend .header-logos__logo;
-
-}
-.header-logos__logo--wam {
-  @extend .header-logos__logo;
-
-  width: 121px;
-  background-image: url("../images/logos/wam_logo.png");
-
-   @include breakpoint(baby-bear) {
-    float: right;
-    width: 190px;
-    height: 90px;
-  }
+.headerlogos__logo--wam {
+  width: auto;
+  height: 60px;
 }

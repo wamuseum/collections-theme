@@ -27,19 +27,28 @@
 
 
 .mainmenu {
+  @include breakpoint(baby-bear) {
+    float: right;
+  }
 }
 
 .mainmenu__list {
  a {
    padding: 0.5em;
-   margin: 0.5em;
+   margin: 1em 0.5em;
    color: white;
    display: inline-block;
    border-radius: 3px;
+   font-size: 0.8em;
+
+   @include breakpoint(goldilocks) {
+     font-size: 1em;
+   }
 
    &:hover {
      background: $grey;
      text-decoration: none;
+
 
    }
  }

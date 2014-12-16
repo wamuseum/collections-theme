@@ -2,7 +2,7 @@
 (function ($) {
   'use strict';
   Drupal.behaviors.wamMasonry = {
-    attach: function () {
+    attach: function (context, settings) {
 
       var $container = $('.masonry .view-content');
 
@@ -22,7 +22,14 @@
           itemSelector: '.masonry__item'
         });
       });
+
+      if (Drupal.behaviors.ViewsLoadMore) {
+        $container.masonry('on', 'layoutComplete', function () {
+          Drupal.behaviors.ViewsLoadMore.detach();
+          Drupal.behaviors.ViewsLoadMore.attach();
+          //console.log(context);
+        });
+      }
     }
   };
 }(jQuery));
-

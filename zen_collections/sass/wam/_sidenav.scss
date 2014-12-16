@@ -55,6 +55,7 @@
     background: lighten($grey, 2%);
     margin-bottom: 2px;
     overflow: hidden;
+    text-overflow: clip;
   }
 }
 .facetapi-active {
@@ -74,4 +75,24 @@
   background: darken($grey, 5%);
   display: inline-block;
   font-size: 0.9em;
+}
+
+.facetapi-slider {
+  margin: 1em;
+}
+.ui-slider-range {
+  background: $perth;
+}
+.facetapi-slider-min,
+.facetapi-slider-max {
+  padding: 0.3em;
+  background: darken($grey, 5%);
+  border-radius: 3px;
+}
+.element-invisible {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }

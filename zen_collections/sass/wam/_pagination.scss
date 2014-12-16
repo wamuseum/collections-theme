@@ -1,0 +1,89 @@
+/* Pagination */
+
+  .pager {
+    clear: both;
+    list-style: none;
+    margin: $pad 0;
+    //background: white;
+    border-radius: 3px;
+    overflow: hidden;
+    //box-shadow: 0 0 2px 1px rgba(0,0,0,0.2), inset 0 0 10px rgba(255,255,255,0.8);
+    float: left;
+    border: 1px solid rgb(230, 230, 230);
+
+
+    li {
+      float: left;
+      margin: 0;
+      padding: 0;
+      background: rgb(230,230,230);
+      border: 0;
+
+      a {
+        padding: $pad;
+        margin: 0;
+        border-right: 1px solid rgb(230,230,230);
+        display: block;
+        text-decoration: none;
+        text-shadow: none;
+        background: white;
+
+        &:hover {
+          background: rgb(60,60,60);
+          color: white;
+        }
+      }
+    }
+    .first,
+    .last {
+      //display: none;
+
+      @include breakpoint(goldilocks) {
+        //display: block;
+      }
+    }
+    .last {
+      a {
+        border-right: 0;
+        ;
+      }
+    }
+    .pager-next {
+      a {
+        border-right: 0;
+      }
+    }
+    .pager-last {
+      display: none;
+    }
+    .pager-ellipsis,
+    .pager-current {
+      padding: $pad;
+      margin: 0;
+      background: rgb(240,240,240);
+      border-right: 1px solid rgb(230,230,230);
+      display: block;
+      text-shadow: none;
+
+      &.last {
+        border-right: 0;
+      }
+    }
+    .pager-ellipsis {
+      background: white;
+    }
+    .pager-previous {
+
+    }
+    .pager-first {
+      display: none;
+    }
+    .pager-item,
+    .pager-ellipsis {
+      display: none;
+
+      @include breakpoint(goldilocks) {
+        display: block;
+      }
+    }
+  }

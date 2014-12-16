@@ -43,9 +43,13 @@
   text-align: center;
 }
 .fullnode__description {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 300;
   padding-bottom: 3em;
+
+  @include breakpoint(golidlocks) {
+    font-size: 1.4em;
+  }
 }
 
 .fullnode__keywords {

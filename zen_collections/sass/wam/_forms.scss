@@ -292,3 +292,18 @@ html.js fieldset.collapsed .fieldset-legend, html.js fieldset.collapsible .field
   margin: 0;
   padding: 0;
 }
+
+.search-form {
+  input {
+    width: 100%;
+    font-size: 0.8em;
+
+    @include breakpoint(goldilocks) {
+      font-size: 1em;
+      width: auto;
+    }
+  }
+//  .form-text {
+//    font-size: 1em;
+//  }
+}

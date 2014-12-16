@@ -9,11 +9,16 @@
 ?>
 
 <div id="page">
-
-  <header class="header" id="header" role="banner">
-    
+  <header class="header clearfix" id="header" role="banner">
     <?php
     $wambase_path = base_path();
+
+    print '    <a title="visit the Western Australian Museum website" href="' . $wambase_path . '" rel="home" class="headerlogos">';
+?>
+    <img src="/online-collections/sites/all/themes/zen_collections/images/logos/gov_logo.png" class="headerlogos__logo--gov" alt="">
+    <img src="/online-collections/sites/all/themes/zen_collections/images/logos/wam_logo.png" class="headerlogos__logo--wam" alt="">
+<?php
+    print "		</a>\n";
 
 
 //	print "	<div class=\"globalwidth grid grid-pad \">\n";
