@@ -27,7 +27,9 @@
 //.sidenav__inset {
 //	padding-left: 3em;
 //}
-
+.sidebars {
+  background: $grey;
+}
 .sidebar {
   background: $grey;
   padding: 1em;
@@ -95,4 +97,25 @@
   clip: rect(0 0 0 0);
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
+}
+
+.rwdmenubutton {
+  padding: 0.5em 1em;
+  margin: 2em 0 0;
+//  float: none;
+  text-align: center;
+//  width: auto;
+  
+  &:last-of-type {
+    padding-right: 1em;
+  }
+  
+  .sidebars & {
+    color: white;
+    float: right;
+    background: darken($grey, 5%);
+    border-radius: 3px;
+    margin: 1em 1em 0 0;
+    width: auto;
+  }
 }

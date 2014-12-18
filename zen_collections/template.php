@@ -134,3 +134,16 @@ function collections_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+/**
+ * Returns HTML for the deactivation widget.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - text: The text of the facet link.
+ *
+ * @ingroup themable
+ */
+function zen_collections_facetapi_deactivate_widget($variables = array()) {
+  return 'x';
+}

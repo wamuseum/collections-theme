@@ -10,58 +10,10 @@
 
 <div id="page">
   <header class="header clearfix" id="header" role="banner">
-    <?php
-    $wambase_path = base_path();
-
-    print '    <a title="visit the Western Australian Museum website" href="' . $wambase_path . '" rel="home" class="headerlogos">';
-?>
-    <img src="/online-collections/sites/all/themes/zen_collections/images/logos/gov_logo.png" class="headerlogos__logo--gov" alt="">
-    <img src="/online-collections/sites/all/themes/zen_collections/images/logos/wam_logo.png" class="headerlogos__logo--wam" alt="">
-<?php
-    print "		</a>\n";
-
-
-//	print "	<div class=\"globalwidth grid grid-pad \">\n";
-//	print "   <div class=\"header-logos nomq-1-1 gl-1-2 bb-2-3\"> ";
-//	print "    <a accesskey=\"9\" title=\"visit the Western Australian Museum website\" href=\"" . $wambase_path . "\" rel=\"home\">";
-//
-//	if ($is_front):
-//		print "			<h1 class=\"visuallyhidden\">Western Australia Museums</h1>\n";
-//	else:
-//		print "			<span class=\"visuallyhidden\">Western Australia Museums</span>\n";
-//	endif;
-//
-//	print "			<i class=\"header-logos__logo--gov\"></i>\n";
-//	print "			<i class=\"header-logos__logo--wam\"></i>\n";
-//
-//	print "		</a>\n";
-//	print "		</div>\n";
-//	print "   <div class=\"header-search gl-1-2 bb-1-3\"> ";
-//	print "     <span class=\"header-search__tab nomq-1-1 gl-0-0\">";
-//	print "       <a title=\"Search the Western Australian Museum\" href=\"" . $wambase_path . "search/site\">Search</a>";
-//	print "     </span>";
-//	print "			<span class=\"header-search__links nomq-0-0 gl-1-1\">";
-//	print "       <a title=\"Western Australian Museum sitemap\" href=\"" . $wambase_path . "sitemap\">Site map</a> | ";
-//	print "       <a title=\"Western Australian Museum accessibility policy\" href=\"" . $wambase_path . "accessibility\">Accessibility</a> | ";
-//	print "       <a title=\"Contact the Western Australian Museum\" href=\"" . $wambase_path . "about/contact-us\">Contact us</a>";
-//	print "     </span>\n";
-//	print "			<div class=\"nomq-0-0 gl-1-1\">" . render($page['wam_search']) . "</div>\n";
-//	//print "			<div class=\"extra\"><a title=\"search the whole WA Government website\" rel=\"external\" href=\"http://wa.gov.au/search/\">Go to whole of WA Government search</a></div>\n";
-//	print "		</div>\n";
-//    print "  </div>\n";
-//
-//    if ($page['wam_navbar']):
-//		print "  <nav role=\"navigation\" id=\"nav-first\">\n";
-//
-//		print "    <div class=\"globalwidth grid\">";
-//        print render($page['wam_navbar']); 
-//		print "    </div>";
-//
-//		print "  </nav>\n\n";
-//	endif;
-    
-    ?>
-    
+    <a title="visit the Western Australian Museum website" href="http://museum.wa.gov.au" rel="home" class="headerlogos">
+      <img src="/online-collections/sites/all/themes/zen_collections/images/logos/gov_logo.png" class="headerlogos__logo--gov" alt="">
+      <img src="/online-collections/sites/all/themes/zen_collections/images/logos/wam_logo.png" class="headerlogos__logo--wam" alt="">
+    </a>
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
@@ -136,7 +88,7 @@
   
   <div id="main" class="<?php if ($sidebar_first || $sidebar_second): ?> nomq-1-1 bb-2-3 mb-3-4 pb-4-5<?php endif; ?>">
 
-    <div id="content" class="column main" role="main">
+    <div id="content" class="column main clearfix" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -160,7 +112,7 @@
     
   </div>
   <?php if ($sidebar_first || $sidebar_second): ?>
-    <div class="sidebars nomq-0-0 bb-1-3 mb-1-4 pb-1-5">
+    <div id="sidebars" class="sidebars bb-1-3 mb-1-4 pb-1-5">
       <?php print $sidebar_first; ?>
       <?php print $sidebar_second; ?>
     </div>

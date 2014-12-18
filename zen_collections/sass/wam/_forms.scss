@@ -298,7 +298,7 @@ html.js fieldset.collapsed .fieldset-legend, html.js fieldset.collapsible .field
     width: 100%;
     font-size: 0.8em;
 
-    @include breakpoint(goldilocks) {
+    @include breakpoint(baby-bear) {
       font-size: 1em;
       width: auto;
     }

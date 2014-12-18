@@ -4,3 +4,5 @@ build/*
 
 sftpCache.json
 .DS_Store
+
+sftpCache-live.json
