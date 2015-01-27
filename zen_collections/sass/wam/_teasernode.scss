@@ -60,3 +60,29 @@
     display: inline-block;
   }
 }
+
+.teasernode__pinner {
+  padding: 0.5em 0.5em 1em;
+  border-top: 1px solid $white-dark;
+
+  img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: left;
+  }
+}
+.teasernode__author {
+  margin: 3px 0 0 50px;
+
+  a {
+    color: $grey;
+  }
+  span {
+    color: $grey-light;
+    display: block;
+    font-weight: 700;
+    font-size: 80%;
+    text-transform: uppercase;
+  }
+}

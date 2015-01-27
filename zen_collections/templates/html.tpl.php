@@ -40,6 +40,28 @@
     <![endif]-->
   <?php endif; ?>
   <script>
+    var standalone = window.navigator.standalone,
+    userAgent = window.navigator.userAgent.toLowerCase(),
+    safari = /safari/.test( userAgent ),
+    ios = /iphone|ipod|ipad/.test( userAgent );
+
+    if( ios ) {
+        if ( !standalone && safari ) {
+            //browser
+          document.getElementsByTagName('html')[0].className+=' notuiwebview';
+
+        } else if ( standalone && !safari ) {
+            //standalone
+          document.getElementsByTagName('html')[0].className+=' notuiwebview';
+        } else if ( !standalone && !safari ) {
+            //uiwebview
+          document.getElementsByTagName('html')[0].className+=' uiwebview';
+        };
+    } else {
+        //not iOS
+      document.getElementsByTagName('html')[0].className+=' notuiwebview';
+    };
+
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
