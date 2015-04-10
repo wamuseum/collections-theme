@@ -50,14 +50,18 @@ module.exports = function (grunt) {
 
     autoprefixer: {
       options: {
-        browsers: ['last 3 version']
+        browsers: ['last 3 versions', 'ie 8', 'ie 9']
       },
-      multiple_files: {
-        expand: true,
-        flatten: true,
-        src: 'build/zen_collections/css/sassy/*.css',
-        dest: 'build/zen_collections/css'
+
+      single_file: {
+        options: {
+          // Target-specific options go here.
+        },
+        src: 'build/zen_collections/css/styles.css',
+        dest: 'build/zen_collections/css/styles.css'
       }
+
+
     },
 
 
@@ -79,6 +83,7 @@ module.exports = function (grunt) {
               'zen_collections/js/wam__header-megamenu.js',
               'zen_collections/js/wam__header-sticky.js',
               'zen_collections/js/wam__facets.js',
+              'zen_collections/js/wam__journal.js',
               'zen_collections/js/script.js'],
         dest: 'build/zen_collections/js/script.js'
       }
@@ -133,6 +138,11 @@ module.exports = function (grunt) {
           cwd: 'zen_collections/templates/',
           src: ['**'],
           dest: 'build/zen_collections/templates'
+        }, {
+          expand: true,
+          cwd: 'zen_collections/ds_layouts/',
+          src: ['**'],
+          dest: 'build/zen_collections/ds_layouts'
         }, {
           expand: true,
           cwd: 'zen/',

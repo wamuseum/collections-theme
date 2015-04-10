@@ -1,0 +1,174 @@
+.journal {
+//	background: white;
+//	border-radius: 3px;
+//
+//	margin: 1em;
+//	box-shadow: 0 1px 2px 1px rgba(150,150,150,.1);
+//	overflow: hidden;
+//	//border-bottom: 10px solid rgb(230,230,230);
+  a {
+    color: $grey;
+    text-decoration: underline;
+  }
+}
+
+.journal__intro {
+  //font-size: 1.1em;
+  padding: 0.5em 0.5em 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $white-dark;
+
+
+
+
+	& > h1,
+	& a > h2 {
+		margin-top: 0;
+	}
+	ul {
+		list-style: square;
+	}
+	li {
+		margin-left: 1em;
+	}
+}
+.journal__img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.journal__description {
+  font-size: 1.2em;
+  font-weight: 300;
+  @include breakpoint(baby-bear) {
+    padding: 0 1em;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.journal__keywords {
+
+  a {
+    margin-right: 3px;
+    display: inline-block;
+  }
+}
+
+.journal__list {
+  list-style: none;
+  padding: 0;
+}
+.journal__title {
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(baby-bear) {
+    text-align: right;
+  }
+}
+.journal__date {
+  font-size: 0.9em;
+
+  @include breakpoint(baby-bear) {
+    text-align: right;
+  }
+}
+.journal__highlight {
+  font-weight: 600;
+  padding-top: 0.2em;
+  line-height: 1.5em;
+
+  @include breakpoint(baby-bear) {
+    text-align: right;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+.journal__entrynum {
+  font-size: 0.8em;
+  color: $grey-light;
+  padding-left: 0.5em;
+}
+.journal__snippetnumber {
+  font-size: 0.8em;
+  color: $grey-light;
+  padding-left: 0.5em;
+}
+.journal__pagenumber {
+  font-size: 0.8em;
+  color: $grey-light;
+}
+
+
+.journal__translated,
+.journal__transcribed {
+  padding: 2em 0;
+  overflow: hidden;
+}
+
+.js-links {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  display: block;
+}
+
+.js-translated,
+.js-transcribed {
+  display: inline-block;
+  background: $corporate;
+  padding: 1em;
+  margin-right: 0.5em;
+  color: white;
+}
+
+
+.journal__snippet {
+
+}
+
+.journal__header--page {
+  line-height: 0;
+  position: relative;
+
+  img {
+    @include max-image();
+  }
+}
+
+
+
+@include breakpoint(baby-bear) {
+  .journal__header {
+    width: 27%;
+    clear: both;
+  }
+  .journal__header--page {
+    width: 100%;
+    clear: both;
+  }
+  .journal__left {
+    width: 27%;
+    float: left;
+  }
+  .journal__middle {
+    width: 50%;
+    float: left;
+  }
+  .journal__right {
+    width: 23%;
+    float: left;
+  }
+  .journal__footer {
+    Clear: both;
+  }
+}
