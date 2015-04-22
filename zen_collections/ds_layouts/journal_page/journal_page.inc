@@ -6,6 +6,7 @@ function ds_journal_page() {
       'header' => t('Header'),
       'left' => t('Left'),
       'middle' => t('Middle'),
+      'right' => t('Right'),
       'footer' => t('Footer'),
       'lefttrans' => t('Left Transcribed'),
       'middletrans' => t('Middle Transcribed'),    

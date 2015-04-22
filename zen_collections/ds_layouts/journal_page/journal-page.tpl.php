@@ -5,13 +5,13 @@
  * WAM Display Suite 3 column 25/50/25 stacked template.
  */
 ?>
-<<?php print $layout_wrapper; print $layout_attributes; ?> class="journal__snippet <?php print $classes;?> clearfix globalwidth">
+<<?php print $layout_wrapper; print $layout_attributes; ?> class="journal__snippet <?php print $classes;?> clearfix">
 
   <?php if (isset($title_suffix['contextual_links'])): ?>
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
-  <<?php print $header_wrapper ?> class="journal__header--page <?php print $header_classes; ?>">
+  <<?php print $header_wrapper ?> class="journal__header <?php print $header_classes; ?>">
     <?php print $header; ?>
   </<?php print $header_wrapper ?>>
 
@@ -38,6 +38,11 @@
       </<?php print $middletrans_wrapper ?>>
 
     </div>
+
+      <<?php print $right_wrapper ?> class="journal__right<?php print $right_classes; ?>">
+        <?php print $right; ?>
+      </<?php print $right_wrapper ?>>
+
 
 
   <<?php print $footer_wrapper ?> class="journal__footer<?php print $footer_classes; ?>">

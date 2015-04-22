@@ -62,7 +62,8 @@ h1,
 .partial-node-form-title,
 .wrapper__nav h3,
 .node-answer-form h3,
-.title--alt {
+.title--alt,
+.block__title {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -306,4 +307,7 @@ h1,
   }
 }
 
+.block__title {
+  text-align: center;
+}
 

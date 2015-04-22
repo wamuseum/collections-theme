@@ -1,0 +1,115 @@
+/* =============================================================================
+ *   Tabs (local tasks)
+ * ========================================================================== */
+#tasks {
+  margin-bottom: 15px;
+}
+
+ul.primary li {
+  display: block;
+  float: left;
+  margin: 0 1px -1px;
+}
+ul.primary li a {
+  background-color: whitesmoke;
+  border-color: #cccccc;
+  margin-right: 1px;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+ul.primary li a:hover, ul.primary li a:focus {
+  background-color: #eeeeee;
+  border-color: #cccccc;
+}
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+  background-color: #e6e6e6;
+  border-bottom-color: #e6e6e6;
+}
+
+ul.secondary {
+  border-bottom: 1px solid #cccccc;
+  margin: 1em 0 0;
+  padding: 0 .3em 1em;
+}
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+ul.secondary li a:hover, ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+
+ul.primary.tabs {
+  //background: $black;
+  margin: 0;
+  border-bottom: 0;
+  overflow: hidden;
+}
+
+
+ul.primary.tabs {
+  border-bottom: none;
+  padding: $pad;
+  margin: 0;
+
+  @include wam-font-heading();
+}
+
+ul.primary.tabs li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+ul.primary.tabs li a {
+  background-color: $grey-light;
+  border-radius: 3px;
+
+  display: inline-block;
+  border: none;
+}
+
+ul.primary.tabs li a,
+ul.primary.tabs li a span {
+  color: $white-dark;
+}
+ul.primary.tabs li a:hover {
+  text-decoration: none;
+  background-color: rgb(0,0,0);
+  color: white;
+}
+ul.primary.tabs li.active a {
+  position: relative;
+  background-color: #999999;
+  border: none;
+}
+ul.primary.tabs li.active a,
+ul.primary.tabs li.active a:hover {
+  background-color: #999999;
+}
+
+ul.primary.tabs li.active a,
+ul.primary.tabs li.active a span {
+  color: #333333;
+}
+ul.primary.tabs li.active a:after {
+  position: absolute;
+  bottom: -.7em;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  margin-left: -.6em;
+  content: "";
+  border-width: .4em .6em;
+  border-style: solid;
+  border-color: #999999 transparent transparent;
+}

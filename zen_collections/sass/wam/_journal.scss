@@ -42,6 +42,7 @@
 
 .journal__description {
   font-size: 1.2em;
+  line-height: 1.6;
   font-weight: 300;
   @include breakpoint(baby-bear) {
     padding: 0 1em;
@@ -63,16 +64,17 @@
 .journal__list {
   list-style: none;
   padding: 0;
-}
-.journal__title {
-  font-size: 1.8em;
-  margin: 0;
-  padding: 0;
 
-  @include breakpoint(baby-bear) {
-    text-align: right;
+  .node-unpublished {
+    background: white;
   }
 }
+.journal--item {
+  padding: 2em 1em;
+  background: white;
+  border-bottom: 1px solid $grey-light;
+}
+
 .journal__date {
   font-size: 0.9em;
 
@@ -80,10 +82,24 @@
     text-align: right;
   }
 }
+.journal__title {
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin: -0.14em 0 0 0;
+  padding: 0;
+
+  @include breakpoint(baby-bear) {
+    text-align: right;
+
+    & + .journal__highlight {
+      margin-top: 1.875em;
+    }
+  }
+}
 .journal__highlight {
   font-weight: 600;
-  padding-top: 0.2em;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.9;
 
   @include breakpoint(baby-bear) {
     text-align: right;
@@ -95,7 +111,7 @@
 }
 .journal__entrynum {
   font-size: 0.8em;
-  color: $grey-light;
+  //color: $grey-light;
   padding-left: 0.5em;
 }
 .journal__snippetnumber {
@@ -108,13 +124,13 @@
   color: $grey-light;
 }
 
-
-.journal__translated,
-.journal__transcribed {
-  padding: 2em 0;
-  overflow: hidden;
+.view-display-id-block {
+  .journal__translated,
+  .journal__transcribed {
+    padding: 2em 0;
+    overflow: hidden;
+  }
 }
-
 .js-links {
   position: absolute;
   bottom: 1em;
@@ -136,7 +152,7 @@
 
 }
 
-.journal__header--page {
+.journal__header {
   line-height: 0;
   position: relative;
 
@@ -145,11 +161,59 @@
   }
 }
 
+.journal__right {
+  background: $white-dark;
+  margin: 1em 0  2em;
+  padding: 1em;
+  border-bottom: 1px solid $grey-light;
+}
+
+
+.js-toggle-transcribed,
+.js-toggle-translated {
+  color: $grey;
+  font-size: 80%;
+  padding: 0.5em;
+  border: 1px solid $grey-light;
+  border-radius: 3px;
+  float: right;
+  background: white;
+}
 
 
 @include breakpoint(baby-bear) {
   .journal__header {
-    width: 27%;
+    width: 100%;
+    clear: both;
+  }
+  .journal__header--page {
+    width: 100%;
+    clear: both;
+  }
+  .journal__left {
+    width: 22%;
+    float: left;
+    min-height: 1px;
+  }
+  .journal__middle {
+    width: 60%;
+    float: left;
+  }
+  .journal__right {
+    width: 18%;
+    float: left;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+  }
+  .journal__footer {
+    Clear: both;
+  }
+}
+@include breakpoint(mama-bear) {
+  .journal__header {
+    width: 100%;
     clear: both;
   }
   .journal__header--page {
