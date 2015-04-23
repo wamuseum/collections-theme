@@ -124,11 +124,12 @@
   color: $grey-light;
 }
 
-.view-display-id-block {
+.journal--page {
   .journal__translated,
   .journal__transcribed {
-    padding: 2em 0;
+    padding: 2em 1em;
     overflow: hidden;
+    background: white;
   }
 }
 .js-links {
@@ -161,11 +162,13 @@
   }
 }
 
-.journal__right {
-  background: $white-dark;
-  margin: 1em 0  2em;
-  padding: 1em;
-  border-bottom: 1px solid $grey-light;
+.journal--item {
+  .journal__right {
+    background: $white-dark;
+    margin: 1em 0  2em;
+    padding: 1em;
+    border-bottom: 1px solid $grey-light;
+  }
 }
 
 
@@ -202,10 +205,13 @@
   .journal__right {
     width: 18%;
     float: left;
-    background: transparent;
-    margin: 0;
-    padding: 0;
-    border-bottom: 0;
+
+    .journal--item & {
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      border-bottom: 0;
+    }
   }
   .journal__footer {
     Clear: both;
