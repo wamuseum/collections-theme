@@ -39,16 +39,29 @@
   }
 }
 
+.fullnode__img--gallery {
+  a:first-of-type {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .fullnode__title {
   text-align: center;
 }
 .fullnode__description {
-  font-size: 1.2em;
-  font-weight: 300;
   padding-bottom: 3em;
+  
+  p {
+    font-size: 1.2em;
+    font-weight: 300;
+   
 
-  @include breakpoint(golidlocks) {
-    font-size: 1.4em;
+    @include breakpoint(golidlocks) {
+      font-size: 1.4em;
+    }
   }
 }
 

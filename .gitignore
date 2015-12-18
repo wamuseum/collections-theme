@@ -6,3 +6,5 @@ sftpCache.json
 .DS_Store
 
 sftpCache-live.json
+
+.sass-cache/*
