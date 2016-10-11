@@ -1,0 +1,10 @@
+If your missing the grunt modules run 
+
+npm install --save dev insert-your-missing-module-name-here
+
+Full list I needed:
+
+npm install --save-dev grunt-autoprefixer grunt-contrib-clean grunt-contrib-compass grunt-contrib-concat grunt-contrib-copy grunt-contrib-cssmin grunt-contrib-sass grunt-contrib-uglify grunt-contrib-watch grunt-dev-update grunt-sftp-deploy grunt-smushit jshint-stylish load-grunt-tasks
+
+
+Also had to add .ftpass with user and pass
