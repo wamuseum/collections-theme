@@ -49,7 +49,7 @@
       </nav>
     <?php endif; ?>
 
-    <?php print render($page['header']); ?>
+    
 
     
     <div id="navigation">
@@ -77,8 +77,9 @@
       <?php print render($page['navigation']); ?>
 
     </div>
+    
   </header>
-  
+  <?php print render($page['header']); ?>
   
   <?php
     // Render the sidebars to see if there's anything in them.

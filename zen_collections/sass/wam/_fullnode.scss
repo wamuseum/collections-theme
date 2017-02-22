@@ -21,9 +21,9 @@
 
 	
 
-	& > h1,
-	& a > h2 {
-		margin-top: 0;
+	& h1 + h2,
+    & a > h2 {
+		margin-top: -0.5em;
 	}
 	ul {
 		list-style: square;
@@ -47,6 +47,17 @@
     }
   }
 }
+.fullnode__img--centred {
+  text-align: center;
+}
+.fullnode__profileimg {
+  text-align: center;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
 
 .fullnode__title {
   text-align: center;
@@ -73,10 +84,3 @@
   }
 }
 
-.fullnode__profileimg {
-  text-align: center;
-
-  img {
-    border-radius: 50%;
-  }
-}
