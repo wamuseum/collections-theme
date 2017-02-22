@@ -1,3 +1,41 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3221706, 2016-05-19T21:52:21-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BrandonTextWeb-Bold by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon/-text/bold/
+ * 
+ * Webfont: BrandonTextWeb-Regular by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon/-text/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3221706
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2015 by Hannes von Doehren. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3128ca");
+
+  
+@font-face {font-family: 'BrandonTextWeb-Bold';src: url('../../zen_collections/fonts/brandon//3128CA_0_0.eot');src: url('../../zen_collections/fonts/brandon/3128CA_0_0.eot?#iefix') format('embedded-opentype'),url('../../zen_collections/fonts/brandon/3128CA_0_0.woff2') format('woff2'),url('../../zen_collections/fonts/brandon/3128CA_0_0.woff') format('woff'),url('../../zen_collections/fonts/brandon//3128CA_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'BrandonTextWeb-Regular';src: url('../../style/fonts/brandon//3128CA_1_0.eot');src: url('../../zen_collections/fonts/brandon/3128CA_1_0.eot?#iefix') format('embedded-opentype'),url('../../zen_collections/fonts/brandon/3128CA_1_0.woff2') format('woff2'),url('../../zen_collections/fonts/brandon/3128CA_1_0.woff') format('woff'),url('../../zen_collections/fonts/brandon/3128CA_1_0.ttf') format('truetype');}
+ 
+
+
+
+
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
@@ -9,7 +47,7 @@
 }
 
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'BrandonTextWeb-Regular', sans-serif;
   font-size: 1em;
   background: #f0f0f0 url(../images/escheresque.png) 0 0 repeat;
   background-attachment: fixed;

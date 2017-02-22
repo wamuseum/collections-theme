@@ -119,7 +119,7 @@ module.exports = function (grunt) {
       fonts: {
         files: [{
           expand: true,
-          cwd: 'libs/fonts/',
+          cwd: 'zen_collections/fonts/',
           src: ['**'],
           dest: 'build/zen_collections/fonts'
         }]
