@@ -57,3 +57,41 @@
    }
  }
 }
+
+.secondmenu {
+  background: $grey;
+  width: 100%;
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+  
+  @include clearfix-micro();
+}
+
+.secondmenu__list {
+ a {
+   padding: 0.3em;
+   margin: 0 0.5em;
+   color: white;
+   display: inline-block;
+   border-radius: 3px;
+   font-size: 0.8em;
+
+   @include breakpoint(goldilocks) {
+     font-size: 1em;
+   }
+
+   &:hover {
+     background: $black;
+     text-decoration: none;
+
+
+   }
+ }
+}
+
+
+.region-header {
+  width: 100%;
+  display: block;
+}
