@@ -20,7 +20,7 @@ h6 {
 
 
 h1 {
-  font-size: 2.18em;
+  font-size: 1.84em;
   margin-top: 0.5em;
 
   a {
@@ -29,19 +29,19 @@ h1 {
 }
 
 h2 {
-  font-size: 1.84em;
+  font-size: 1.64em;
   font-weight: 300;
 }
 h3 {
-  font-size: 1.64em;
- }
-
-h4 {
   font-size: 1.45em;
  }
 
-h5 {
+h4 {
   font-size: 1.18em;
+ }
+
+h5 {
+  font-size: 1em;
  }
 
 h6 {
@@ -64,10 +64,15 @@ h1,
 .wrapper__nav h3,
 .node-answer-form h3,
 .title--alt,
-.block__title {
+.block__title,
+.teasernode__title {
   font-family: 'BrandonTextWeb-Bold', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+}
+strong {
+  font-family: 'BrandonTextWeb-Bold', sans-serif;
+  font-weight: 400;
 }
 
 .grey {
