@@ -1,5 +1,6 @@
 /* Pagination */
 
+  
   .pager {
     clear: both;
     list-style: none;
@@ -86,4 +87,8 @@
         display: block;
       }
     }
+  }
+  .pager--alt {
+    margin-left: 1em;
+    padding: 0;
   }
