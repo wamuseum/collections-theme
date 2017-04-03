@@ -818,3 +818,37 @@
 .glyphicon-wrench:before {
   content: "\1f527";
 }
+
+
+.cc {
+  background: url(../images/chooser_cc.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  display: inline-block; 
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+}
+.by {
+  background: url(../images/chooser_by.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  display: inline-block; 
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+}
+.nc {
+  background: url(../images/chooser_nc.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  display: inline-block; 
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+}
+.sa {
+  background: url(../images/chooser_sa.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  display: inline-block; 
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+}
